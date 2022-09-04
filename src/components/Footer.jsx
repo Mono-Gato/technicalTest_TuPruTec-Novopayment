@@ -1,5 +1,5 @@
 import React from 'react'
-//styles
+//styles "/*Mobile First Layout*/"
 import '../styles/components/Footer.scss'
 //assets
 import brandIsotipo from '../assets/brand/Isotipo.svg'

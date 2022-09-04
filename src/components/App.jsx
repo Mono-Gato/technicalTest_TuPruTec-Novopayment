@@ -1,6 +1,6 @@
 import React from 'react';
 //Styles
-import '../styles/gobal.scss'
+import '../styles/global.scss'
 //Components
 import { Footer } from './Footer';
 

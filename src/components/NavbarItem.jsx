@@ -2,10 +2,10 @@ import React from 'react'
 //styles
 import '../styles/containers/Info.scss'
 
-function NavbarItem(props) {
+function NavbarItem({text, index}) {
     return(
-        <li key={props.key} className='navbar__item'>
-            <a className='item__anchor'>{props.text}</a>
+        <li key={index} className='navbar__item'>
+            <a className='item__anchor'>{text}</a>
         </li>
     )
 }

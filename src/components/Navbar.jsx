@@ -27,10 +27,10 @@ function Navbar() {
                     </ul>
                 </li>
                 {
-                   Object.keys(navbarInfoMenu).map((name) =>{
+                   Object.keys(navbarInfoMenu).map((name, index) =>{
                     return (
                         <NavbarItem
-                            key={name}
+                            key={index}
                             text={name}
                         />
                     )

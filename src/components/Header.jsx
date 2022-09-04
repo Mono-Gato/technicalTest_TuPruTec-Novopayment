@@ -1,4 +1,6 @@
 import React from 'react'
+//styles "/*Mobile First Layout*/"
+import '../styles/components/Header.scss'
 
 function Header () {
     return(

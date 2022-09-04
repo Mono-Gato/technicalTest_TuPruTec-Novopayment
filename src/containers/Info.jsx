@@ -2,10 +2,10 @@ import React from 'react'
 //styles
 import '../styles/containers/Info.scss'
 
-function Info() {
+function Info({ children }) {
     return(
         <main className='info'>
-
+            {children}
         </main>
     )
 }

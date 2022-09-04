@@ -2,17 +2,17 @@ import React, { useState } from 'react'
 //Styles
 import '../styles/components/Navbar.scss'
 //data
- import defaultDATA from '../data/servicio.json'
+import defaultDATA from '../data/servicio.json'
 import { NavbarItem } from './NavbarItem';
 
 function Navbar() {
-    const [ navbarInfoMenu, setNavbarInfoMenu ] = React.useState(defaultDATA.lista[0]);
-    console.log(Object.keys(navbarInfoMenu))
-
-    return(
+    const [navbarInfoMenu, setNavbarInfoMenu] = React.useState(defaultDATA.lista[0]);
+    return (
         <nav className='navbar'>
             <ul className='navbar__list'>
-            <li className='navbar__item'>
+                {/*
+                Structure
+                <li className='navbar__item'>
                     <a className='item__anchor'>Transferencias y pagos</a>
                     <ul className='item__dropdown'>
                         <li className='dropdown__item'>
@@ -25,19 +25,27 @@ function Navbar() {
                             <a className='item__anchor'>Tarjetas de credito </a>
                         </li>
                     </ul>
-                </li>
+                </li>*/}
                 {
-                   Object.keys(navbarInfoMenu).map((name, index) =>{
-                    return (
-                        <NavbarItem
-                            key={index}
-                            text={name}
-                        />
-                    )
-                   })
+                    Object.entries(navbarInfoMenu).map(([name, value]) => {
+                        return (
+                            <NavbarItem
+                                key={name}
+                                text={name}
+                            />
+                        )
+                    })
                 }
-               
-                
+                {
+                    Object.entries(navbarInfoMenu).map(([entry, value]) => {
+                        console.log('level 1', entry, value)
+                        if (value.length > 0) {
+                            Object.entries(value[0]).map(([key2]) => {
+                                console.log('level2', key2)
+                            });
+                        }
+                    })
+                }
             </ul>
         </nav>
     )

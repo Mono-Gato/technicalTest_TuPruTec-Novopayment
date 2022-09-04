@@ -3,11 +3,12 @@
 .header{
     background-color: $primary-color;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: $medium-spacing;
     &__logo{
         img{
-            width: 120px;
+            width: 150px;
         }
     }
     &__user{
@@ -16,8 +17,10 @@
             font-size: $extraSmall-font;
             text-transform: uppercase;
             font-weight: 700;
+            display: flex;
+            align-items: center;
             img{
-                width: 20px;
+                height: 8px;
                 margin-left: $extraSmall-spacing;
             }
         }

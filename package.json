@@ -1,0 +1,28 @@
+{
+  "name": "technicaltest_tuprutec-novopayment",
+  "version": "1.0.0",
+  "description": "Technical test for the job opportinity of web developer in Novopayment",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mono-Gato/technicalTest_TuPruTec-Novopayment.git"
+  },
+  "keywords": [
+    "React",
+    "Javascript",
+    "Webpack"
+  ],
+  "author": "MonoGato <monogato@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mono-Gato/technicalTest_TuPruTec-Novopayment/issues"
+  },
+  "homepage": "https://github.com/Mono-Gato/technicalTest_TuPruTec-Novopayment#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

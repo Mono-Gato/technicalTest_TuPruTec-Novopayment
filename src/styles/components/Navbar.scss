@@ -3,7 +3,7 @@
 .navbar{
     background-color: $light-color;
     padding: 0 $small-spacing;
-    overflow-x: scroll;
+    overflow-x: auto;
     &__list{
         display: flex;
         justify-content: flex-start;

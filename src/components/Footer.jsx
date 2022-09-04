@@ -1,10 +1,11 @@
 import React from 'react'
-
+//assets
+import brandIsotipo from '../assets/brand/Isotipo.svg'
 function Footer() {
     return(
         <footer className='footer'>
             <div className='footer__isotipo'>
-                <img src="" alt="isotipo" />
+                <img src={brandIsotipo} alt="isotipo" />
             </div>
             <div className='footer__copyright'>
                 <h6>
@@ -12,7 +13,7 @@ function Footer() {
                 </h6>
             </div>
             <div className='footer__isotipo'>
-                <img src="" alt="isotipo" />
+                <img src={brandIsotipo} alt="isotipo" />
             </div>
         </footer>
     )

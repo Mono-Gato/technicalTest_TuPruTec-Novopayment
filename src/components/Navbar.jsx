@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 //Styles
 import '../styles/components/Navbar.scss'
+//data
+ import defaultDATA from '../data/servicio.json'
+import { NavbarItem } from './NavbarItem';
 
 function Navbar() {
+    const [ navbarInfoMenu, setNavbarInfoMenu ] = React.useState(defaultDATA.lista[0]);
+    console.log(Object.keys(navbarInfoMenu))
+
     return(
         <nav className='navbar'>
             <ul className='navbar__list'>
-                <li className='navbar__item'>
-                    <a className='item__anchor'>Lista de tarjetas</a>
-                    
-                </li>
-                <li className='navbar__item'>
+            <li className='navbar__item'>
                     <a className='item__anchor'>Transferencias y pagos</a>
                     <ul className='item__dropdown'>
                         <li className='dropdown__item'>
@@ -24,9 +26,18 @@ function Navbar() {
                         </li>
                     </ul>
                 </li>
-                <li className='navbar__item'>
-                    <a className='item__anchor'>Atencion al cliente</a>
-                </li>
+                {
+                   Object.keys(navbarInfoMenu).map((name) =>{
+                    return (
+                        <NavbarItem
+                            key={name}
+                            text={name}
+                        />
+                    )
+                   })
+                }
+               
+                
             </ul>
         </nav>
     )

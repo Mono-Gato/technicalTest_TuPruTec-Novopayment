@@ -1,0 +1,32 @@
+@import '../vars';
+
+.notFound{
+    padding: $large-spacing;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 75px - 175px);
+    &__title{
+        font-size: $extraLarge-font;
+        color: $primary-color;
+        font-weight: 700;
+        margin-bottom: $extraSmall-spacing;
+        text-align: center;
+    }
+    &__subtitle{
+        font-size: $medium-font;
+        margin-bottom: $large-spacing;
+        text-align: center;
+        font-weight: 400;
+    }
+    &__image{
+        max-width: 600px;
+        margin-bottom: $extraLarge-spacing;
+    }
+}
+@media screen and (min-width: 670px){
+    .notFound{
+        min-height: calc(100vh - 75px - 90px);
+    }
+}

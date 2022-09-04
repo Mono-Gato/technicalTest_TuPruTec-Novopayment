@@ -1,0 +1,28 @@
+@import '../vars';
+
+.header{
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $medium-spacing;
+    &__logo{
+        img{
+            width: 150px;
+        }
+    }
+    &__user{
+        p{
+            color: $light-color;
+            font-size: $extraSmall-font;
+            text-transform: uppercase;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            img{
+                height: 8px;
+                margin-left: $extraSmall-spacing;
+            }
+        }
+    }
+}

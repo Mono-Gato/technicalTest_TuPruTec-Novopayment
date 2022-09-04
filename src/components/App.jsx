@@ -5,11 +5,13 @@ import '../styles/global.scss'
 import { Footer } from './Footer';
 import { Layout } from '../containers/Layout';
 import { Header } from './Header';
+import { Info } from '../containers/Info';
 
 function App() {
     return(
         <Layout>
             <Header />
+            <Info />
             <Footer />
         </Layout>
     )

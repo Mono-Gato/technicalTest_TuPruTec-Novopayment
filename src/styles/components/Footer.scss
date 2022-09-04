@@ -1,0 +1,28 @@
+@import '../vars';
+
+/*Mobile First Layout*/
+.footer{
+    background-color: $primary-color;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: $large-spacing;
+    &__isotipo{
+        img{
+            width: 100px;
+        }
+        
+    }
+    &__copyright{
+        h6{
+            font-size: $extraSmall-font;
+            color: $light-color;
+            font-weight:400;
+            text-align: center;
+            margin: $small-spacing 0;
+        }
+    }
+}

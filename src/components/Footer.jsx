@@ -1,4 +1,6 @@
 import React from 'react'
+//styles
+import '../styles/components/Footer.scss'
 //assets
 import brandIsotipo from '../assets/brand/Isotipo.svg'
 function Footer() {

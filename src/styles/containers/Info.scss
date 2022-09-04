@@ -1,0 +1,14 @@
+.info{
+    width: 100%;
+    min-height: calc(100vh - 75px - 175px);
+    background-image: url('../../assets/images/bg-content.jpg');
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center center;
+}
+
+@media screen and (min-width: 670px){
+    .info{
+        min-height: calc(100vh - 75px - 90px);
+    }
+}

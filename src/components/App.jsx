@@ -3,10 +3,13 @@ import React from 'react';
 import '../styles/global.scss'
 //Components
 import { Footer } from './Footer';
+import { Layout } from '../containers/Layout';
 
 function App() {
     return(
-        <Footer />
+        <Layout>
+            <Footer />
+        </Layout>
     )
 };
 

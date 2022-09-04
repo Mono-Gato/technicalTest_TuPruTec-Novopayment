@@ -18,7 +18,7 @@
             cursor: pointer;
             border-bottom: 4px solid transparent;
             transition: .3s all ease-in-out;
-            width: max-content;
+            min-width: max-content;
             &:hover{
                 border-bottom: 4px solid $primary-color;
             }
